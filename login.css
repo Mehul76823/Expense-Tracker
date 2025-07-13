@@ -1,0 +1,114 @@
+/* 🌟 Modern Login Page CSS */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ✅ Navigation Bar */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fdf6e3;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #ffd700;
+}
+
+/* ✅ Login Section Styling */
+.login-section {
+  margin: auto;
+  padding: 40px;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.login-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  color: #fdf6e3;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #333;
+}
+
+.login-form p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.login-form a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Footer */
+footer.cta-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  background-color: #1a1a1a;
+  color: #fdf6e3;
+  margin-top: auto;
+}

@@ -1,0 +1,188 @@
+:root {
+  --cream: #f5f5dc;
+  --cream-hover: #fff8d4;
+  --gold-glow: 0 0 12px 4px rgba(255, 215, 0, 0.4);
+  --dark-bar: #1f1f1f;
+  --middle-bg: #f3e5ab;
+  --text-color: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  /* ✅ Background Image */
+  background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d1') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7); /* white overlay */
+  z-index: -1;
+}
+
+/* ✅ Top Navigation */
+.navbar {
+  background-color: var(--dark-bar);
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #155724;
+  font-weight: bold;
+  background-color: var(--cream);
+  padding: 10px 24px;
+  border-radius: 999px;
+  transition: 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: var(--cream-hover);
+  box-shadow: var(--gold-glow);
+  transform: scale(1.05);
+}
+
+/* ✅ Main Content */
+.container {
+  flex: 1;
+  padding: 40px 20px;
+  background-color: var(--middle-bg);
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* ✅ Feature Boxes */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.feature-box {
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.feature-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 1rem;
+}
+
+/* ✅ Form & Table */
+form, table {
+  margin-top: 30px;
+}
+
+.form-control,
+.form-select,
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button.btn-primary {
+  background-color: var(--cream);
+  color: var(--text-color);
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: var(--cream-hover);
+  box-shadow: var(--gold-glow);
+  transform: scale(1.05);
+}
+
+/* ✅ CTA Footer */
+.cta-footer {
+  background-color: var(--dark-bar);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--cream);
+}
+
+.cta-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  background-color: var(--cream);
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--cream-hover);
+  box-shadow: var(--gold-glow);
+  transform: scale(1.05);
+}

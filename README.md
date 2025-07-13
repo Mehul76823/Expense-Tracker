@@ -21,10 +21,24 @@ Data Security: Form sanitization and server-side checks to protect against inval
 🌐 Tech Stack
 Frontend: HTML5, CSS3, JavaScript (vanilla)
 
+Backend: Python with Flask
+
 Database: SQLite (with a transactions table)
 
 Styling: Custom CSS with modern design principles (e.g., soft shadows, smooth animations, minimalistic layout)
 
 This application is ideal for individuals or small business owners looking for a simple, fast, and private way to track financial activity without relying on third-party platforms.
 
-Name-Mehul sharma
+
+
+
+
+
+
+
+
+
+
+Tools
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Expense Tracker</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <!-- ✅ Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Request</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Login Form Section -->
+  <main class="container login-section">
+    <h2 class="text-center mb-4">Login to Your Account</h2>
+
+    <form class="login-form">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="••••••••" required />
+
+      <button type="submit" class="btn btn-primary w-100 mt-3">Login</button>
+
+      <p class="text-center mt-3">Don't have an account? <a href="#">Sign Up</a></p>
+    </form>
+  </main>
+
+  <!-- ✅ Optional Footer -->
+  <footer class="cta-footer">
+    <div class="cta-container">
+      <p>&copy; 2025 Expense Tracker. All rights reserved.</p>
+    </div>
+  </footer>
+<script src="login.js"></script>
+
+</body>
+</html>

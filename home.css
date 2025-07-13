@@ -1,0 +1,48 @@
+:root {
+  --cream: #f5f5dc;
+  --cream-hover: #fff8d4;
+  --gold-glow: 0 0 12px 4px rgba(255, 215, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-container {
+  text-align: center;
+}
+
+.home-container h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.home-button {
+  background-color: var(--cream);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.home-button:hover {
+  background-color: var(--cream-hover);
+  box-shadow: var(--gold-glow);
+  transform: scale(1.05);
+}

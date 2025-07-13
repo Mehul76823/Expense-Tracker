@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - Expense Tracker</title>
+  <link rel="stylesheet" href="signup.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+</head>
+<body>
+
+  <div class="signup-section">
+    <h2>Create an Account</h2>
+    <form id="signup-form" class="signup-form">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="••••••••" required />
+
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+    <p id="message" class="message"></p>
+  </div>
+
+  <script>
+    // ✅ Replace with your Firebase config
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+      projectId: "YOUR_PROJECT_ID",
+      appId: "YOUR_APP_ID"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    const form = document.getElementById('signup-form');
+    const message = document.getElementById('message');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = form.email.value;
+      const password = form.password.value;
+
+      auth.createUserWithEmailAndPassword(email, password)
+        .then(userCredential => {
+          message.textContent = '✅ Signup successful!';
+          message.style.color = 'green';
+          form.reset();
+        })
+        .catch(error => {
+          message.textContent = `❌ ${error.message}`;
+          message.style.color = 'red';
+        });
+    });
+  </script>
+</body>
+</html>
